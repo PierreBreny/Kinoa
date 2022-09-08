@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { deleteFavorite, getFavById, insertFavorites } from "../db/db";
+import { REACT_APP_MOVIEDB_API_KEY } from "../env";
 import { IMAGE_URL } from "../utils/api-const";
 
 export default function Details({ route }) {
@@ -68,8 +69,10 @@ export default function Details({ route }) {
 
   const movie_id = item.id;
 
+  const api_key = REACT_APP_MOVIEDB_API_KEY;
+
   const getGenres = () => {
-    const details_url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=c9e23b610c2f0c1040a493fc10ce5aaf`;
+    const details_url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${api_key}`;
     axios
       .get(details_url)
       .then(({ data }) => {

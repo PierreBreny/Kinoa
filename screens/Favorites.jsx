@@ -8,7 +8,7 @@ import {
   FlatList,
   Pressable,
 } from "react-native";
-import { getFavorites, loadDatabase } from "../db/db";
+import { getFavorites } from "../db/db";
 import { IMAGE_URL } from "../utils/api-const";
 
 export default function Favorites({ navigation }) {

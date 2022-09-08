@@ -10,6 +10,7 @@ import {
   TouchableHighlight,
   Pressable,
 } from "react-native";
+import { REACT_APP_MOVIEDB_API_KEY } from "../env";
 import { IMAGE_URL } from "../utils/api-const";
 
 export default function Popular({ navigation }) {
@@ -18,7 +19,10 @@ export default function Popular({ navigation }) {
   const [page, setPage] = useState(1);
 
   const getPopular = async () => {
-    const movie_url = `https://api.themoviedb.org/3/movie/popular?api_key=c9e23b610c2f0c1040a493fc10ce5aaf&page=${page}`;
+    const api_key = REACT_APP_MOVIEDB_API_KEY;
+    console.log(process.env);
+    // const movie_url = `https://api.themoviedb.org/3/movie/popular?api_key=c9e23b610c2f0c1040a493fc10ce5aaf&page=${page}`;
+    const movie_url = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=${page}`;
     fetch(movie_url)
       .then((res) => res.json())
       .then((json) => {
