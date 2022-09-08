@@ -20,8 +20,6 @@ export default function Popular({ navigation }) {
 
   const getPopular = async () => {
     const api_key = REACT_APP_MOVIEDB_API_KEY;
-    console.log(process.env);
-    // const movie_url = `https://api.themoviedb.org/3/movie/popular?api_key=c9e23b610c2f0c1040a493fc10ce5aaf&page=${page}`;
     const movie_url = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=${page}`;
     fetch(movie_url)
       .then((res) => res.json())
