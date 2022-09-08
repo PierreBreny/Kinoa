@@ -29,4 +29,4 @@ In this project, for security purposes, the API_KEY was added in a env file that
 
 ## Demo
 
-<img src="Kinoa_Home.png" width="254"/> <img src="Kino_Details.png" width="254"/> <img src="Kinoa_Favorites.png" width="254"/>
+<img src="Kinoa_Home.png" width="254"/> <img src="Kinoa_Details.png" width="254"/> <img src="Kinoa_Favorites.png" width="254"/>
