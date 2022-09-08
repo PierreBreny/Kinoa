@@ -3,7 +3,7 @@
 
 **Meaning:** Contraction du grec ancien κίνημα (« mouvement »), et de Quinoa.
 
-This movie application project was built with **React** and **Expo** et **SQLite** .
+This movie application project was built with **React**, **Expo** and **SQLite** .
 
 ## Features
 
